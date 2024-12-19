@@ -1,0 +1,18 @@
+# Django ve temel framework
+django>=4.2,<5.0
+djangorestframework>=3.14,<4.0
+
+# Jazzmin Admin Paneli
+django-jazzmin>=2.5,<3.0
+
+# CORS headers (cross-origin requests için)
+django-cors-headers>=3.13,<4.0
+
+# Veritabanı için (örnek: MySQL kullanıyorsan)
+mysqlclient>=2.2,<3.0
+
+# Veya SQLite kullanıyorsan eklemen gerekmez (Django bunu zaten destekler).
+
+# Ek paketler (isteğe bağlı)
+# Pillow (Django medya dosyalarıyla çalışırken görseller için gerekebilir)
+pillow>=9.0,<11.0
