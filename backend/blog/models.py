@@ -19,7 +19,13 @@ class Language(models.Model):
         return self.name
 
 class Skill(models.Model):
+    group_choices=(
+        ('Main', 'Main'),
+        ('Side', 'Side')
+    )
+
     languages = models.ManyToManyField(Language, related_name='skills')
+    group = models.CharField(max_length=4, default="Main", choices=group_choices)
 
 
     def __str__(self):

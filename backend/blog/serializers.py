@@ -16,7 +16,7 @@ class SkillsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Skill
-        fields = ['id' , 'languages',]
+        fields = ['id' , 'languages','group']
 
 
 class ProjectSerializer(serializers.ModelSerializer):

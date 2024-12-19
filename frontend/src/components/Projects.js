@@ -38,7 +38,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+        <div className="border-b border-neutral-900 pb-4 lg:mb-35 w-full">
             <h1 className="font-press text-2xl text-center mt-2 mb-3 lg:mb-8 text-neutral-900 dark:text-neutral-100">
                 Projects
             </h1>
@@ -56,6 +56,7 @@ const Projects = () => {
                                 alt={project.title}
                                 style={{
                                     zIndex: 1,
+                                    
                                 }} 
                             />
                             {/* Pikselleştirilmiş Görsel */}

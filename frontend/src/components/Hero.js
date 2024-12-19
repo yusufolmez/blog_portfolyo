@@ -1,6 +1,7 @@
 import profilePic from '../assets/profile.jpg';
 import Project from './Projects';
 import Yetenekler from './Yetenekler';
+import About from './About';
 import { motion } from "motion/react"
 
 const container = (delay) => ({
@@ -45,11 +46,13 @@ const Hero = () => {
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x:0, opacity: 1}}
                         transition={{ duration: 1, delay: 0.9}}
+                        className='rounded-2xl'
                         src={profilePic} alt='Yusuf Ölmez'/>
                     </div>
                 </div>
             </div>  
         </div>
+        <div className='flex flex-auto'><About /></div>
         <div className='flex flex-auto'><Project /></div>
         <div className='flex flex-auto'><Yetenekler /></div>
         </div>
